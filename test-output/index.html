@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-My_Maven_Project_Automation">
-              <span class="suite-name border-failed">My Maven Project Automation</span>
+              <span class="suite-name border-passed">My Maven Project Automation</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-My_Maven_Project_Automation" class="hide-methods failed suite-My_Maven_Project_Automation"> (hide)</a> <!-- hide-methods failed suite-My_Maven_Project_Automation -->
-                      <a href="#" panel-name="suite-My_Maven_Project_Automation" class="show-methods failed suite-My_Maven_Project_Automation"> (show)</a> <!-- show-methods failed suite-My_Maven_Project_Automation -->
-                    </span>
-                    <div class="method-list-content failed suite-My_Maven_Project_Automation">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-My_Maven_Project_Automation" title="com.rediff.qa.test.HomePageTest" hash-for-method="checkHomePageLogo">checkHomePageLogo</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-My_Maven_Project_Automation -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +100,11 @@
                       <a href="#" panel-name="suite-My_Maven_Project_Automation" class="show-methods passed suite-My_Maven_Project_Automation"> (show)</a> <!-- show-methods passed suite-My_Maven_Project_Automation -->
                     </span>
                     <div class="method-list-content passed suite-My_Maven_Project_Automation">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_Maven_Project_Automation" title="com.rediff.qa.test.HomePageTest" hash-for-method="checkHomePageLogo">checkHomePageLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-My_Maven_Project_Automation" title="com.rediff.qa.test.HomePageTest" hash-for-method="checkHomePageTitleTest">checkHomePageTitleTest</a> <!-- method navigator-link -->
@@ -136,9 +127,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-My_Maven_Project_Automation" class="panel My_Maven_Project_Automation">
-          <div class="suite-My_Maven_Project_Automation-class-failed">
+          <div class="suite-My_Maven_Project_Automation-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.rediff.qa.test.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -147,45 +138,8 @@
                   <a name="checkHomePageLogo">
                   </a> <!-- checkHomePageLogo -->
                   <span class="method-name">checkHomePageLogo</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@class=&apos;hmsprite loogo&apos;]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;EQ-EQ6283006&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 11048, moz:profile: C:\Users\tqwn9135\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: bc7563c2-476f-46f9-90a8-84f8959803f6
-*** Element info: {Using=xpath, value=//span[@class=&apos;hmsprite loogo&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
-	at com.rediff.qa.pages.HomePage.checkHomePageLogo(HomePage.java:35)
-	at com.rediff.qa.test.HomePageTest.checkHomePageLogo(HomePageTest.java:34)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-My_Maven_Project_Automation-class-failed -->
-          <div class="suite-My_Maven_Project_Automation-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.rediff.qa.test.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="checkHomePageTitleTest">
@@ -259,22 +213,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkHomePageLogo')
+data.setCell(0, 1, 'goToLoginPage')
 data.setCell(0, 2, 'com.rediff.qa.test.HomePageTest')
-data.setCell(0, 3, 60396);
+data.setCell(0, 3, 1108);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'goToLoginPage')
+data.setCell(1, 1, 'checkHomePageLogo')
 data.setCell(1, 2, 'com.rediff.qa.test.HomePageTest')
-data.setCell(1, 3, 610);
+data.setCell(1, 3, 96);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'checkHomePageTitleTest')
 data.setCell(2, 2, 'com.rediff.qa.test.HomePageTest')
-data.setCell(2, 3, 27);
+data.setCell(2, 3, 37);
 window.suiteTableData['My_Maven_Project_Automation']= { tableData: data, tableDiv: 'times-div-My_Maven_Project_Automation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-My_Maven_Project_Automation">
               </div> <!-- times-div-My_Maven_Project_Automation -->
             </div> <!-- times-div -->
@@ -307,37 +261,35 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkHomePageTitleTest</span>
-                <span class="method-start">9643 ms</span>
+                <span class="method-start">10257 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">shutdown</span>
-                <span class="method-start">9675 ms</span>
+                <span class="method-start">10299 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">11797 ms</span>
+                <span class="method-start">12504 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">checkHomePageLogo</span>
-                <span class="method-start">21085 ms</span>
+                <span class="method-start">22806 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">shutdown</span>
-                <span class="method-start">81485 ms</span>
+                <span class="method-start">22904 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">83495 ms</span>
+                <span class="method-start">24994 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">93758 ms</span>
+                <span class="method-start">35120 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">shutdown</span>
-                <span class="method-start">94370 ms</span>
+                <span class="method-start">36231 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

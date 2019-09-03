@@ -8,8 +8,8 @@
     <classes>
       <class name="com.rediff.qa.test.HomePageTest">
         <methods>
-          <include name="checkHomePageLogo"/>
           <include name="setup"/>
+          <include name="checkHomePageTitleTest"/>
           <include name="shutdown"/>
         </methods>
       </class> <!-- com.rediff.qa.test.HomePageTest -->

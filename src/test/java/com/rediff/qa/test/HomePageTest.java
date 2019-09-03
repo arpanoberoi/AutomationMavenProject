@@ -1,5 +1,6 @@
 package com.rediff.qa.test;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -12,21 +13,29 @@ public class HomePageTest extends TestBase {
 
 	HomePage homepage;
 	LoginPage loginpage;
+	Logger log = Logger.getLogger(HomePageTest.class);
+
 
 	public HomePageTest() {
 		super();
+		
 	}
+
 
 	@BeforeMethod
 	public void setup() {
 		initialization();
 		homepage = new HomePage();
+		
 	}
 
 	@Test(priority = 1)
 	public void checkHomePageTitleTest() {
+		log.info("Hi I am test 1");
 		Assert.assertEquals(homepage.checkTitle(), "Rediff.com: News | Rediffmail | Stock Quotes | Shopping",
 				"Home Page Title is not correct");
+		
+		log.warn("Hi I am warn log");
 	}
 
 	@Test(priority = 2)
