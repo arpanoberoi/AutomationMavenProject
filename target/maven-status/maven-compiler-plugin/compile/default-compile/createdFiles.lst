@@ -1,0 +1,6 @@
+com\rediff\qa\base\TestBase.class
+com\rediff\qa\pages\HomePage.class
+com\rediff\qa\pages\LoginPage.class
+com\rediff\qa\util\ExtentReporterNG.class
+com\rediff\qa\util\WebEventListener.class
+com\rediff\qa\util\TestUtil.class
